@@ -1,6 +1,1 @@
-export function changestate() {
-
-    return { 
-        action: 'CHANGENAME',
-        payload:"Rahul" }
-  };
+export const ChangenameAction = "CHANGENAME"

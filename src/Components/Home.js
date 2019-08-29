@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux';
-import {changestate} from './store/action/action'
+import {ChangenameAction} from './store/action/action'
 function Home(props) {
     const  _changeData = () =>{
         props.changeReducer()
@@ -21,7 +21,7 @@ const mapStateToProps = (state)=>{
 const mapDispatchToProps = (dispatch)=>{
     return({
         changeReducer :(userName)=>{
-            dispatch(changestate)
+            dispatch({type:"CHANGENAME"})
         }
     })
 }

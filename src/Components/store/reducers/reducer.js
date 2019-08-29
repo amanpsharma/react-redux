@@ -1,16 +1,16 @@
-
+import {ChangenameAction} from '../action/action'
 const INITIAL_STATE ={
     userName: 'SHARMA',
     name:'NITISH',
     color:'red'
 }
 export default (state = INITIAL_STATE,action)=>{
-    console.log(action.type)
+    console.log(ChangenameAction)
     switch(action.type){
-        case 'CHANGENAME':
+        case ChangenameAction.ChangenameAction:
             return({
-                ...state,
-                userName: action.payload
+                ...state
+                
             })
         default:
             return state
